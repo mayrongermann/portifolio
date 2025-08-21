@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mayron Germann — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfólio de Mayron Germann Sousa de Pádua — Eng. de Software focado em Python, SQL e stack JS/TS com Node.js, React/React Native e MongoDB." />
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="alternate icon" href="icon.png">
+</head>
+<body>
+  <header class="site-header container">
+    <a class="brand" href="#">
+      <span class="brand__dot"></span>
+      <span class="brand__text">Mayron Germann</span>
+    </a>
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero container">
+      <div class="hero__text">
+        <h1>Engenharia de Software • <span class="accent">Python &amp; SQL</span> • Full-Stack JS/TS</h1>
+        <p>
+          Desenvolvedor focado em <strong>Python</strong> e <strong>SQL</strong> para dados, com experiência prática em
+          <strong>Node.js</strong>, <strong>React/React Native</strong>, <strong>MongoDB</strong>, automação com
+          <strong>Selenium</strong> e mensageria <strong>RabbitMQ</strong>. Curto criar soluções limpas, escaláveis e medir desempenho.
+        </p>
+        <div class="hero__cta">
+          <a class="btn primary" href="#projetos">Ver projetos</a>
+          <a class="btn" href="cv-mayron.pdf" download>Baixar CV</a>
+        </div>
+        <div class="hero__links">
+          <!-- Troque os links abaixo pelos seus -->
+          <a href="https://github.com/mayrongermann" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/mayron-p%C3%A1dua-69613724b/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="mailto:mayrongermann@gmail.com">Email</a>
+        </div>
+      </div>
+      <div class="hero__card">
+        <div class="stat">
+          <span class="stat__num">+10</span>
+          <span class="stat__label">projetos práticos</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">MongoDB</span>
+          <span class="stat__label">integrações e APIs</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">Selenium</span>
+          <span class="stat__label">testes & automação</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section container">
+      <h2>Sobre mim</h2>
+      <p>
+        Estou avançando em Engenharia de Software e venho construindo projetos que conectam backend em
+        <strong>Node.js</strong> e bancos como <strong>MongoDB & SQL</strong>, com interfaces em <strong>React</strong> e
+        <strong>React Native</strong>. Tenho foco em boas práticas (SOLID, Clean Code, padrões GoF), documentação em
+        <strong>Jira/Confluence</strong> e versionamento no <strong>Bitbucket/GitHub</strong>.
+      </p>
+      <p>
+        Gosto de problemas de <strong>dados</strong> (ETL, modelagem, validações), automação de testes com
+        <strong>Selenium WebDriver</strong>, e mensageria com <strong>RabbitMQ</strong>. Já explorei integração com
+        <strong>Firebase</strong>, além de projetos de <strong>robótica</strong> com MRTduino.
+      </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="section container">
+      <h2>Projetos em destaque</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card__top">
+            <h3>BasicCalc's – Calculadoras Financeiras</h3>
+            <span class="tag">HTML5 • CSS3 • JavaScript • Chart.js</span>
+          </div>
+          <p>
+        O <strong>BasicCalc</strong> é um projeto de desenvolvimento front-end com o objetivo de
+        oferecer ferramentas financeiras simples e intuitivas. Construído do zero,
+        o projeto demonstra a capacidade de criar aplicações web responsivas e dinâmicas
+        para auxiliar o usuário no gerenciamento de suas finanças pessoais.
+          </p>
+          <ul class="bullets">
+        <li>Desenvolvimento front-end com HTML, CSS.</li>
+        <li>Implementação da lógica de negócio para cálculo de juros e gestão de despesas com JavaScript.</li>
+        <li>Integração com a biblioteca Chart.js para gráficos interativos.</li>
+        <li>Design de uma experiência de usuário limpa e responsiva.</li>
+          </ul>
+          <div class="card__actions">
+            <a class="btn small" href="#" aria-disabled="true">Demo</a>
+            <a class="btn small" href="#" aria-disabled="true">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>EasyWork – Plataforma de Serviços</h3>
+            <span class="tag">React Native • Node • MongoDB</span>
+          </div>
+          <p>
+             O <strong>EasyWork</strong> é um aplicativo que conecta clientes a profissionais autônomos 
+      para realização de serviços do dia a dia, como reparos domésticos, jardinagem, passeios com pets, 
+      entre outros. Inspirado no modelo “Uber de serviços”, o projeto busca simplificar a contratação 
+      e trazer mais oportunidades para trabalhadores locais.
+          </p>
+          <ul class="bullets">
+            <li>Cadastro e login com autenticação via Firebase</li>
+            <li>Integração com banco de dados MongoDB para gerenciar clientes, profissionais e pedidos</li>
+            <li>Busca por serviços com listagem de profissionais disponíveis em tempo real</li>
+            <li>Agendamento de serviços com data, horário, local e forma de pagamento</li>
+            <li>Versão mobile (React Native) e versão web (React.js)</li>
+          </ul>
+          <div class="card__actions">
+            <a class="btn small" href="#" aria-disabled="true">Mockups</a>
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Automação de Lançamentos</h3>
+            <span class="tag">Python • Selenium • RabbitMQ</span>
+          </div>
+          <p>
+            Bot educativo para monitorar lançamentos e automatizar ações de compra após login manual do usuário.
+            Arquitetura com filas e workers para escalar e registrar tentativas.
+          </p>
+          <ul class="bullets">
+            <li>Selenium WebDriver headless</li>
+            <li>Mensageria com RabbitMQ</li>
+            <li>Alertas por email</li>
+          </ul>
+          <div class="card__actions">
+            <a class="btn small" href="#" aria-disabled="true">Diagrama</a>
+            <a class="btn small" href="#" aria-disabled="true">Código</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Data Projects</h3>
+            <span class="tag">Python • scikit-learn</span>
+          </div>
+          <p>
+            Notebooks com preparação de dados, imputação, discretização e estudo de desbalanceamento (Heart Failure),
+            além de clustering/knn no California Housing e Wine Dataset.
+          </p>
+          <ul class="bullets">
+            <li>Pipeline de limpeza e EDA</li>
+            <li>Comparação de técnicas e métricas</li>
+            <li>Relatórios exportados em PDF</li>
+          </ul>
+          <div class="card__actions">
+            <a class="btn small" href="#" aria-disabled="true">Relatórios</a>
+            <a class="btn small" href="#" aria-disabled="true">Repositório</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>Robótica 1 — MRTduino</h3>
+            <span class="tag">C/Arduino • Sensores</span>
+          </div>
+          <p>
+            Projeto autoral básico com sensores e atuadores, documentação de montagem e testes.
+          </p>
+          <ul class="bullets">
+            <li>Leitura de sensores e lógica embarcada</li>
+            <li>Prototipagem e integração</li>
+            <li>Vídeo demonstrativo</li>
+          </ul>
+          <div class="card__actions">
+            <a class="btn small" href="#" aria-disabled="true">Vídeo</a>
+            <a class="btn small" href="#" aria-disabled="true">Código</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="section container">
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <div>
+      <h4>Linguagens</h4>
+      <ul>
+        <li>Python</li>
+        <li>SQL</li>
+        <li>JavaScript / TypeScript</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Java</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Back-end</h4>
+      <ul>
+        <li>Node.js (Express)</li>
+        <li>MongoDB</li>
+        <li>RabbitMQ</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Front-end & Mobile</h4>
+      <ul>
+        <li>React</li>
+        <li>React Native</li>
+        <li>HTML5 / CSS3</li>
+        <li>Android Studio</li>
+      </ul>
+    </div>
+    <div>
+      <h4>QA & DevTools</h4>
+      <ul>
+        <li>Selenium WebDriver</li>
+        <li>Jira / Confluence</li>
+        <li>GitHub / Bitbucket</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Metodologias Ágeis</h4>
+      <ul>
+        <li>Scrum</li>
+        <li>Kanban</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+    <!-- Contato -->
+    <section  id="contato" class="section container">
+      <h2>Contato</h2>
+      <p>Aberto a estágio/CLT e freelas. Vamos conversar?</p>
+      <form class="contact" action="https://formspree.io/f/mjkoqzba" method="POST">
+        <label>
+          Nome
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Mensagem
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <small>© <span id="year"></span> Mayron Germann — construído com carinho e café ☕</small>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
